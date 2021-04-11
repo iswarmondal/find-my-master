@@ -6,18 +6,38 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 function Nav() {
+  
+  const navLinkStyle={
+    color: "white",
+    textDecoration : "none"
+  }
   return (
     <div>
       <AppBar color="secondary">
         <ToolBar className="nav">
-          <Typography variant="h5">My Teacher</Typography>
+          <Typography variant="h5">
+            <Link to="/" style={navLinkStyle}>
+              My Teacher
+            </Link>
+          </Typography>
 
           <section className="nav-links">
-            <Button>Home</Button>
-            <Button>About us</Button>
-            <Button>Contact</Button>
-            <Button>Log In</Button>
-            <Button>Sign Up</Button>
+            <Link to="/" style={navLinkStyle}>
+              <Button>Home</Button>
+            </Link>
+
+            <Link to="/about" style={navLinkStyle}>
+              <Button>About</Button>
+            </Link>
+            <Link to="/contact" style={navLinkStyle}>
+              <Button>Contact</Button>
+            </Link>
+            <Link style={navLinkStyle}>
+              <Button>Login</Button>
+            </Link>
+            <Link style={navLinkStyle}>
+              <Button>Sign up</Button>
+            </Link>
           </section>
         </ToolBar>
       </AppBar>

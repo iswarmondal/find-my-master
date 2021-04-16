@@ -6,7 +6,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function Nav() {
   return (
     <>
-      <div style={{ margin: `0 3rem 0 3rem` }}>
+      <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <Link
@@ -67,7 +67,7 @@ function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <Link className="dropdown-item" to="/">
+                      <Link className="dropdown-item" to="/login">
                         Log in
                       </Link>
                     </li>
